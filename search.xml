@@ -5,8 +5,8 @@
     
     <entry>
       <title>demo</title>
-      <link href="/thepeng/2023/08/31/demo/"/>
-      <url>/thepeng/2023/08/31/demo/</url>
+      <link href="/2023/08/31/demo/"/>
+      <url>/2023/08/31/demo/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -18,8 +18,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/thepeng/2023/08/28/hello-world/"/>
-      <url>/thepeng/2023/08/28/hello-world/</url>
+      <link href="/2023/08/28/hello-world/"/>
+      <url>/2023/08/28/hello-world/</url>
       
         <content type="html"><![CDATA[<div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>👏🏻欢迎来到我的Hexo博客！</p></div><div class="note orange icon-padding flat"><i class="note-icon fas fa-fan"></i><p>这是我的第一篇文章。了解更多信息请联系<a href="/img/wechat.jpg">我</a>。</p></div><hr><h2 id="Blog的Git命令"><a href="#Blog的Git命令" class="headerlink" title="Blog的Git命令"></a>Blog的Git命令</h2><p>安装blog</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>初始化blog</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure><p>清空缓存文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>生成网页静态文件至public文件夹</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>部署到设定的仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>本地预览</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><h2 id="部署Blog到代码管理上"><a href="#部署Blog到代码管理上" class="headerlink" title="部署Blog到代码管理上"></a>部署Blog到代码管理上</h2><ol><li><p>打开<mark class="hl-label orange">_config.yml</mark> 文件(在blog文件的根目录下)</p></li><li><p>滑到文件底部，更换：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/fengye97/fengye97.github.io.git  <span class="comment"># 仓库地址名</span></span><br><span class="line">  branch: master <span class="comment"># 仓库分支名</span></span><br></pre></td></tr></table></figure></li><li><p>安装Git部署插件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li><li><p>执行上述Blog的命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li></ol>]]></content>
       
